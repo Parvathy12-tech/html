@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Menu</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .restaurant-name {
+      text-align: right;
+      font-family: 'Georgia', serif;
+      font-size: 24px;
+      color: #c0392b;
+      margin-bottom: 5px;
+    }
+
+    .welcome-message {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      word-spacing: 6px;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #444;
+    }
+
+    th, td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 12px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+
+    a:hover {
+      color: #e74c3c;
+    }
+
+    .icon-left {
+      margin-right: 8px;
+      color: #27ae60;
+    }
+
+    .icon-right {
+      margin-left: 8px;
+      color: #8e44ad;
+    }
+  </style>
+</head>
+<body>
+
+  <h3 class="restaurant-name">
+    <i class="fas fa-utensils icon-left"></i>
+    Spice Garden
+    <i class="fas fa-leaf icon-right"></i>
+  </h3>
+
+  <p class="welcome-message">Welcome to our delicious world</p>
+
+  <table>
+    <tr>
+      <th>Menu Item</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Paneer Butter Masala</td>
+      <td>₹220</td>
+    </tr>
+    <tr>
+      <td>Chicken Biryani</td>
+      <td>₹250</td>
+    </tr>
+    <tr>
+      <td>Veg Thali</td>
+      <td>₹180</td>
+    </tr>
+  </table>
+
+  <p style="text-align:center; margin-top:30px;">
+    <a href="#">View Full Menu</a> | <a href="#">Contact Us</a>
+  </p>
+
+</body>
+</html>

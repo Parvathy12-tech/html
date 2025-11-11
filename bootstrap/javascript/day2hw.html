@@ -7,21 +7,27 @@
 </head>
 <body>
     <script type="text/javascript">
-	let book={
-		title: "The Alchemist",
-		author:"paulo coelho",
-		year:1988,
-
-		 getSummary:function(){
-		 return 'The name is ' + this.title + ',was written by ' + this.author + 'in '+ this.year + '.';
-		 	}
-
-	};
-function  printBookSummary(bookObj) {
-	console.log(bookObj.getSummary());
+	let contact1={
+		name:"Abi",
+		phn:9874526321,
+		email:"abi@gmail.com",
+		getInfo:function(){
+			return 'Name ' +this.name +', email ' + this.email+' phn ' + this.phn +'.';
 }
-printBookSummary(book);
-
+	};
+			let contact2={
+		name:"Abinaya",
+		phn:9874526001,
+		email:"abinaya@gmail.com",
+		getInfo:function(){
+			return 'Name ' +this.name +', email ' + this.email+' phn ' + this.phn +'.';
+		}
+	};
+	function printContactInfo(contact){
+		console.log(contact.getInfo());
+	}
+printContactInfo(contact1);
+printContactInfo(contact2);
 </script>
 </body>
 </html>

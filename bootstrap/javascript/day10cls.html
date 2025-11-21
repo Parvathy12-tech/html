@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script type="text/javascript">
+	
+const jsonText = '{"name":"Kevin","email":"kevin@example.com","feedback":"Thank you for your help!"}';
+
+
+const checkFeedback = () => {
+  try {
+    
+    const userObj = JSON.parse(jsonText);
+
+    
+    const feedbackText = userObj.feedback;
+
+    
+    if (feedbackText.toLowerCase().includes("thank")) {
+      console.log("Positive feedback received");
+    } else {
+      console.log("Feedback noted");
+    }
+  } catch (error) {
+    
+    console.log("Error: Could not process the feedback.");
+  }
+};
+
+
+checkFeedback();
+</script> 
+</body>
+</html>
